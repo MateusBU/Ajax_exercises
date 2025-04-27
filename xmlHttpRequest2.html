@@ -18,10 +18,44 @@
 </head>
 
 <body class="content exercise">
-    <input type="file" name="arquivo" />
-    <div class="progresso"></div>
+    <input type="file" name="file"/>
+    <div class="progress"></div>
 
     <script>
-        // ...
+        function ajaxUpload(config){
+            const xhr = new XMLHttpRequest();
+
+            //able to chack the porcentage of the file that was uploaded
+            if(xhr.upload){
+                xhr.upload.onprogress = e =>{
+                    const current = e.loaded;
+                    const total = e.total;
+                    const percent = Math.floor((current / total) * 100);
+
+                    //write the progress of the upload in the element progress
+                    config.progress({current, percent, total});
+                }
+            }
+
+            xhr.open("post", config.url, true);
+            xhr.send(config.formData); //send the file
+        }
+
+        document.querySelector('input[type=file]').onchange = e =>{
+            const formData = new FormData();
+
+            const inputFile = e.target;
+            //e.target is the input with type = file
+            formData.append(inputFile.name, inputFile.files[0]);
+
+            ajaxUpload({
+                url: "upload", //server.js /upload
+                formData: formData,
+                progress(data){
+                    const progress = document.querySelector('.progress');
+                    progress.innerHTML = JSON.stringify(data);
+                }
+            });
+        }
     </script>
 </body>

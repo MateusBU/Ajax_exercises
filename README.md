@@ -25,7 +25,7 @@ To work with Ajax, you may need the following dependencies:
 
 - **body-parser 2.2.0**: Interprets the data to be manipulated in the files.
 - **express 5.1.0**:
-- **multer 1.4.5**:
+- **multer 1.4.5**: Multer is a Node.js middleware for handling multipart form-data, mainly used for uploading files. It processes incoming files and stores them in memory or on disk. Typically used with Express apps to manage file uploads easily.
 
 #### Dev Dependencies
 
