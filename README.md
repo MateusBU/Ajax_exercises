@@ -9,19 +9,19 @@ This results in faster, more interactive, and smoother user experiences on websi
 
 ## Table of Contents
 
-- [Installation](#installation)
+- [Commands](#commands)
 - [Dependencies](#dependencies)
     - [Dev Dependencies](#dev-dependencies)
 - [Helpful Sites for Ajax Designs](#helpful-sites-for-ajax-designs)
 
-## Installation
-
-To work with Ajax, you may need the following:
+## Commands
 
 - **npm init -y**: Create package.json file.
 - **npm i**: download dependencies.
+- **npm start**: start the server (from package.json -> "start": "nodemon server.js")
 
 ### Dependencies
+To work with Ajax, you may need the following dependencies:
 
 - **body-parser 2.2.0**: Interprets the data to be manipulated in the files.
 - **express 5.1.0**:

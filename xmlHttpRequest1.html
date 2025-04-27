@@ -11,6 +11,65 @@
     <h1>States</h1>
 
     <script>
-        // ...
+        function ajax(config){
+            const xhr = new XMLHttpRequest();
+            xhr.open(config.method, config.url, true);   //type (GET, POST,...), receive the url and async
+            
+            xhr.onload = e =>{
+                if(xhr.status === 200){
+                    config.sucess(xhr.response)
+                }
+                else if(xhr.status >= 400)
+                {
+                    config.error({
+                        code: xhr.status,
+                        text: xhr.statusText
+                    });
+                }
+            }
+
+            xhr.send();
+        }
+
+        function createTable(states){
+            const rows = states.map(state =>{
+                const tdId = document.createElement('td');
+                tdId.innerHTML = state.id;
+                
+                const tdName = document.createElement('td');
+                tdName.innerHTML = state.name;
+                
+                const tdAabbrevi = document.createElement('td');
+                tdAabbrevi.innerHTML = state.abbrevi;
+
+                const tr = document.createElement('tr');
+                tr.appendChild(tdId);
+                tr.appendChild(tdName);
+                tr.appendChild(tdAabbrevi);
+
+                return tr;
+            })
+
+            //creating table and adding every row (id, state and abb) into the table
+            const table = document.createElement('table');
+            rows.forEach(row => table.appendChild(row));
+            document.body.appendChild(table);
+        }
+
+        ajax({
+            url: "data/states.json",
+            method: "get",
+            sucess(answer){
+                const states  =JSON.parse(answer);
+                createTable(states);
+                //transform each state in a table row
+                //that's why it must use map
+                
+            },
+            error(e){
+                const msg = document.createTextNode(`${e.code}: ${e.text}`)
+                document.body.appendChild(msg)
+            }
+        })
     </script>
 </body>
