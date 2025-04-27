@@ -1,0 +1,29 @@
+<states>
+    <state id="1" name="Acre" abbrevi="AC" />
+    <state id="2" name="Alagoas" abbrevi="AL" />
+    <state id="3" name="Amapá" abbrevi="AP" />
+    <state id="4" name="Amazonas" abbrevi="AM" />
+    <state id="5" name="Bahia" abbrevi="BA" />
+    <state id="6" name="Ceará" abbrevi="CE" />
+    <state id="7" name="Distrito Federal" abbrevi="DF" />
+    <state id="8" name="Espírito Santo" abbrevi="ES" />
+    <state id="9" name="Goiás" abbrevi="GO" />
+    <state id="10" name="Maranhão" abbrevi="MA" />
+    <state id="11" name="Mato Grosso" abbrevi="MT" />
+    <state id="12" name="Mato Grosso do Sul" abbrevi="MS" />
+    <state id="13" name="Minas Gerais" abbrevi="MG" />
+    <state id="14" name="Pará " abbrevi="PA" />
+    <state id="15" name="Paraíba" abbrevi="PB" />
+    <state id="16" name="Paraná" abbrevi="PR" />
+    <state id="17" name="Pernambuco" abbrevi="PE" />
+    <state id="18" name="Piauí" abbrevi="PI" />
+    <state id="19" name="Rio de Janeiro" abbrevi="RJ" />
+    <state id="20" name="Rio Grande do Norte" abbrevi="RN" />
+    <state id="21" name="Rio Grande do Sul" abbrevi="RS" />
+    <state id="22" name="Rondônia" abbrevi="RO" />
+    <state id="23" name="Roraima" abbrevi="RR" />
+    <state id="24" name="Santa Catarina" abbrevi="SC" />
+    <state id="25" name="São Paulo" abbrevi="SP" />
+    <state id="26" name="Sergipe" abbrevi="SE" />
+    <state id="27" name="Tocantins" abbrevi="TO" />
+</states>

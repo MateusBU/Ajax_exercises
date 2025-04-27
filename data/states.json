@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Acre",
+        "abbrevi": "AC"
+    },
+    {
+        "id": 2,
+        "name": "Alagoas",
+        "abbrevi": "AL"
+    },
+    {
+        "id": 3,
+        "name": "Amapá",
+        "abbrevi": "AP"
+    },
+    {
+        "id": 4,
+        "name": "Amazonas",
+        "abbrevi": "AM"
+    },
+    {
+        "id": 5,
+        "name": "Bahia",
+        "abbrevi": "BA"
+    },
+    {
+        "id": 6,
+        "name": "Ceará",
+        "abbrevi": "CE"
+    },
+    {
+        "id": 7,
+        "name": "Distrito Federal",
+        "abbrevi": "DF"
+    },
+    {
+        "id": 8,
+        "name": "Espírito Santo",
+        "abbrevi": "ES"
+    },
+    {
+        "id": 9,
+        "name": "Goiás",
+        "abbrevi": "GO"
+    },
+    {
+        "id": 10,
+        "name": "Maranhão",
+        "abbrevi": "MA"
+    },
+    {
+        "id": 11,
+        "name": "Mato Grosso",
+        "abbrevi": "MT"
+    },
+    {
+        "id": 12,
+        "name": "Mato Grosso do Sul",
+        "abbrevi": "MS"
+    },
+    {
+        "id": 13,
+        "name": "Minas Gerais",
+        "abbrevi": "MG"
+    },
+    {
+        "id": 14,
+        "name": "Pará ",
+        "abbrevi": "PA"
+    },
+    {
+        "id": 15,
+        "name": "Paraíba",
+        "abbrevi": "PB"
+    },
+    {
+        "id": 16,
+        "name": "Paraná",
+        "abbrevi": "PR"
+    },
+    {
+        "id": 17,
+        "name": "Pernambuco",
+        "abbrevi": "PE"
+    },
+    {
+        "id": 18,
+        "name": "Piauí",
+        "abbrevi": "PI"
+    },
+    {
+        "id": 19,
+        "name": "Rio de Janeiro",
+        "abbrevi": "RJ"
+    },
+    {
+        "id": 20,
+        "name": "Rio Grande do Norte",
+        "abbrevi": "RN"
+    },
+    {
+        "id": 21,
+        "name": "Rio Grande do Sul",
+        "abbrevi": "RS"
+    },
+    {
+        "id": 22,
+        "name": "Rondônia",
+        "abbrevi": "RO"
+    },
+    {
+        "id": 23,
+        "name": "Roraima",
+        "abbrevi": "RR"
+    },
+    {
+        "id": 24,
+        "name": "Santa Catarina",
+        "abbrevi": "SC"
+    },
+    {
+        "id": 25,
+        "name": "São Paulo",
+        "abbrevi": "SP"
+    },
+    {
+        "id": 26,
+        "name": "Sergipe",
+        "abbrevi": "SE"
+    },
+    {
+        "id": 27,
+        "name": "Tocantins",
+        "abbrevi": "TO"
+    }
+]
