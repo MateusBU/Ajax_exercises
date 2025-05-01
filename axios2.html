@@ -14,6 +14,24 @@
     <div id="post"></div>
 
     <script>
-        // ...
+        function showResult(id, data){
+            const text = JSON.stringify(data);
+            document.getElementById(id).innerHTML = text;
+        }
+
+        // axios.get('evenOrOdd', {
+        //     params: {
+        //         number: 2
+        //     }
+        // }).then(resp => showResult('get', resp.data))
+        
+        //----OR----//
+
+        axios('evenOrOdd?number=3').then(resp => showResult('get', resp.data))
+
+        axios.post('form', {
+            name: 'Rodrigo',
+            lastname: 'Silva'
+        }).then(resp => showResult('post', resp.data))
     </script>
 </body>

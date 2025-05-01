@@ -41,5 +41,19 @@ app.post('/form', (req, res) =>{
 })
 //---------- Fetch2 ----------//
 
+//---------- Axios2 ----------//
+app.get('/EvenOrOdd', (req, res) => {
+    //req.body -> Data sent in the body of the request (usually in POST, PUT, PATCH).
+    //req.query -> Data in the query string of the URL (after the ?). ?number=123
+    //req.params-> Data from the URL path itself, based on route parameters (e.g., /users/:id). /123
+    const even = (parseInt(req.query.number) % 2) === 0;
+    res.send({
+        result : even ? 'even' : 'odd'
+    })
+})
+
+
+//---------- Axios2 ----------//
+
 app.get('/test', (req, res) => res.send(new Date))
 app.listen(8080, console.log('Starting...'))
