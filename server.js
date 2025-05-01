@@ -31,6 +31,15 @@ app.post('/upload', (req, res) =>{
 })
 //---------- xmlHttpRequest2 ----------//
 
+//---------- Fetch2 ----------//
+          //action from form HTML -> fetch2.html
+app.post('/form', (req, res) =>{
+    res.send({
+        ...req.body, //all data that came as answer
+        id: 1 
+    })
+})
+//---------- Fetch2 ----------//
 
 app.get('/test', (req, res) => res.send(new Date))
 app.listen(8080, console.log('Starting...'))

@@ -22,13 +22,43 @@
 
 <body class="content exercise">
     <h1>Form by Fetch</h1>
-    <form name="userForm" action="forms" method="post">
+    <form name="userForm" action="form" method="post">
         <input type="text" name="name" placeholder="Name..." />
         <input type="text" name="lastname" placeholder="Lastname..." />
-        <button>Salvar</button>
+        <button>Save</button>
     </form>
     <div id="result"></div>
     <script>
-        // ...
+        document.userForm.onsubmit = async e => {
+            e.preventDefault() //control de submission 
+
+            const form = e.target;
+            const data = new FormData(form);
+            data.append('ajax', true);
+
+            const options = {
+                method: form.method, //post
+                body: new URLSearchParams(data)
+            }
+
+            const result = document.getElementById('result');
+            // fetch(form.action, options)
+            //     .then(resp => resp.json())//transform to json
+            //     .then(json =>{
+            //         result.innerHTML = JSON.stringify(json);
+            //     })
+            //     .catch(e => {
+            //         result.innerHTML = e;
+            //     })
+        
+            try{
+                const resp = await fetch(form.action, options);
+                const json = await resp.json();
+                result.innerHTML = JSON.stringify(json);
+            }
+            catch(e){
+                    result.innerHTML = e;
+            }
+        }
     </script>
 </body>
